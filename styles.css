@@ -1,1 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral:wght@200;300;400;500;600&family=Yeseva+One&display=swap');
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Spectral', serif;
+}
 
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.search-box{
+  text-align: center;
+}
+.search-box h1{
+  font-weight: 600;
+  font-size: 35px;
+  /* width: 100%; */
+  background-color: rgb(188, 101, 238);
+  color: white;
+  padding: 20px 0;
+}
+.search-input{
+  width: 500px;
+  height: 50px;
+  margin: 20px 0;
+  text-align: center;
+  border: 1px solid rgba(132, 98, 153, 0.507);
+}
+.search-input::placeholder{
+  color: rgb(201, 173, 226);
+  font-size: 15px;
+}
+.btn{
+  padding: 10px 20px;
+  margin: 15px;
+  border: none;
+  background-color: rgba(94, 12, 141, 0.288);
+  color: black;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.btn:hover{
+  background-color: rgba(188, 169, 199, 0.288);
+}
+#result{
+  display: flex;
+  flex-direction: column; 
+  gap: 2rem;
+  align-items: center;  
+}
+
+.word{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(205, 207, 202, 0.226);
+  width: 80%;
+  padding: 30px;
+  border-radius: 20px;
+}
+.word-head{
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  color: rgb(0, 0, 0);
+}
+.word-head button{
+  padding: 10px;
+  border-radius: 50% !important;
+}
+.word p{
+  padding: 20px 10px;
+}
+
+#history{
+  background-color: rgb(184, 136, 216);
+  margin: 100px 0px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.history-wrap{
+  background-color: rgb(223, 207, 238);
+  padding: 30px 20px;
+  width: 20%;
+  margin: 10px;
+  border-radius: 5px;
+}
+.history-wrap h2{
+  margin-bottom: 20px;
+}
+.history-wrap p{
+  margin: 20px 0;
+}
+.history-wrap button{
+  background: transparent;
+  border: none;
+  position: relative;
+  left: 200px;
+  bottom: 10px;
+  cursor: pointer;
+}
+.history-wrap button:hover{
+  color: rgb(209, 8, 8);
+}
+
+@media(max-width:700px){
+  .search-input{
+    width: 150px;
+    height: 40px;
+    text-align: left;
+    padding: 0 8px;
+  }
+  .search-input::placeholder{
+    color: rgb(201, 173, 226);
+    font-size: 15px;
+  }
+  .btn{
+    padding: 8px 10px;
+  }
+}
